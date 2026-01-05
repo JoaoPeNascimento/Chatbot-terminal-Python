@@ -26,8 +26,8 @@ def iniciar_chatbot():
     )
 
     prompt = ChatPromptTemplate.from_messages([
-        ("system", "Você é um assistente útil e especialista em programação Python."),
-        ("system", "Responda de forma concisa."),
+        ("system", "Você é um assistente virtual útil."),
+        ("system", "Responda de forma concisa em português."),
         MessagesPlaceholder(variable_name="history"),
         ("user", "{input}")
     ])
